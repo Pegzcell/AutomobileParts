@@ -1,0 +1,2 @@
+def deleteFn():
+    pass
