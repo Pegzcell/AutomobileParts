@@ -16,17 +16,18 @@ CREATE TABLE EMPLOYEE (
   state varchar(200),
   zip varchar(200),
   role varchar(200),
-  date_of_joning date,
+  date_of_joining date,
   gender char,
   super_id int,
   FOREIGN KEY (super_id) REFERENCES EMPLOYEE(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE HOURLY_PAID(
-  e_id int PRIMARY KEY,
+  e_id int,
+  date_of_work date,
   pay_scale int,
   hours_of_work int,
-  date_of_work date,
+  PRIMARY KEY (e_id, date_of_work),
   FOREIGN KEY (e_id) REFERENCES EMPLOYEE(id) ON DELETE CASCADE ON UPDATE CASCADE
 
 );
@@ -126,8 +127,8 @@ CREATE TABLE ASSEMBLY_LINE (
 );
 
 CREATE TABLE MACHINE(
-  no_on_line int,
   l_no int,
+  no_on_line int,
   cost int,
   power_consumed int,
   func varchar(200),
@@ -172,15 +173,15 @@ INSERT INTO EMPLOYEE VALUES
 
 
 INSERT INTO HOURLY_PAID VALUES
-(5,50,5,'2020-09-23');
+(5,'2020-09-23', 50,5);
 INSERT INTO HOURLY_PAID VALUES
-(6,50,6,'2020-08-23');
+(6,'2020-08-23',50,6);
 INSERT INTO HOURLY_PAID VALUES
-(7,50,6,'2020-09-13');
+(7,'2020-09-13',50,6);
 INSERT INTO HOURLY_PAID VALUES
-(9,50,7,'2020-09-13');
+(9,'2020-09-13',50,7);
 INSERT INTO HOURLY_PAID VALUES
-(8,70,5,'2020-09-23');
+(8,'2020-09-23',70,5);
 
 
 INSERT INTO SALARIED VALUES
