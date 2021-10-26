@@ -2,10 +2,6 @@
 CLI to query an Automobile Parts Manufacturing Factory database based on the following relational model:
 https://dbdiagram.io/d/6166d8f3940c4c4eec9365b0
 
-queryFns = [menu, clear_screen, db, insertFn, select_projectFn, analyzeFn, updateFn, deleteFn, searchFn, aggFn,  ex, quit]
-
-queries = ['Menu', 'Clear Screen' , 'Print Database', 'Insert', 'Select / Project', 'Analyze','Update','Delete','Search','Aggregate', 'SQL','Quit']
-
 ## List of commands which can be run-
 * Menu
 * Clear screen
