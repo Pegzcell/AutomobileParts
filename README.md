@@ -1,6 +1,5 @@
 # AutomobileParts
-CLI to query an Automobile Parts Manufacturing Factory database based on the following relational model:
-https://dbdiagram.io/d/6166d8f3940c4c4eec9365b0
+This is an interface to query the Automobile Parts Manufacturing Factory database based on the relational model https://dbdiagram.io/d/6166d8f3940c4c4eec9365b0. It seeks to efficiently execute DDL and DML commands on the database that hollistically manages the end-to-end functioning of the factory. The setup is genric enough to be employed for any industrial production unit of similar scale.  
 
 ## List of commands which can be run-
 * Menu
